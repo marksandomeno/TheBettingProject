@@ -10,12 +10,19 @@ driver = webdriver.Chrome(options=options)
 try:
 
     # URL 1:
-    driver.get("")
+    driver.get("https://www.actionnetwork.com/nhl/public-betting")
     # buffer period
     time.sleep(5)
     # capture
     driver.save_screenshot("capture1.png")
-    # pieces:
+
+    # Get the HTML from url
+    html_content = driver.page_source
+    # Save the HTML content to a file
+    with open("page_source.html", "w", encoding="utf-8") as file:
+        file.write(html_content)
+
+    # This is how we would fetch a specific ids contents from the capture.
     example_element = driver.find_element(By.CLASS_NAME, "example-class")
     print(example_element.text)
 
