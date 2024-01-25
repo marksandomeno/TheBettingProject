@@ -1,4 +1,4 @@
-# TheBettingProject
+TheBettingProject
 
 IN PROGRESS...
 
