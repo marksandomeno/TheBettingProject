@@ -1,0 +1,18 @@
+TheBettingProject
+
+IN PROGRESS...
+
+1/30/24
+
+Scrape, OCR, Parse, Learn, Product
+*        *
+
+Scrape:
+Current process will work but need to think of long term logisitics and run some tests.
+We would have an output of data per site, each file a different sport being fed to ML every n interval before it updates with new scrape.
+
+OCR:
+scraping for text using pytesseract (open to other ideas)
+
+
+

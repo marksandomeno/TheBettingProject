@@ -1,11 +1,10 @@
 #!/bin/bash
 
 
-echo "Running the first script (scraping)..."
+echo "Scrape 🚜..."
 python3 scrape.py
 
-
-echo "Running the second script (extracting text)..."
-python3 htmlextract.py
+echo "OCR 🔬..."
+python3 ocrparse.py
 
 echo "Scripts have been executed successfully."
