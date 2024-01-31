@@ -7,6 +7,7 @@ import requests
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
+import os
 
 options = Options()
 options.headless = True  # Running in headless mode
@@ -55,7 +56,9 @@ try:
         offset += part.size[1]
 
     # Save the full image
-    full_image.save('full_screenshot.png')
+    full_image.save(os.path.join(
+        'DATASTORE/NHL/ACTIONNETWORK', 'AN-NHL-CAPTURE.png'))
+
 
 finally:
     driver.quit()
